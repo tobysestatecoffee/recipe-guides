@@ -1,0 +1,111 @@
+[
+  {
+    "drink": "Hot Chocolate",
+    "yield": "30g of Chocolate Sauce",
+    "numShots": "",
+    "vessel": "Latte Glass",
+    "milkTexture": "Above Standard Froth 1.5 to 2cm ",
+    "finishedLook": "Simple Clean Latte Art",
+    "notes": "",
+    "Image": ""
+  },
+  {
+    "drink": "Large Hot Chocolate",
+    "yield": "40g of Chocolate Sauce",
+    "numShots": "",
+    "vessel": "Large Flat White Cup",
+    "milkTexture": "Above Standard Froth 1.5 to 2cm ",
+    "finishedLook": "Simple Clean Latte Art",
+    "notes": "",
+    "Image": ""
+  },
+  {
+    "drink": "Mocha",
+    "yield": "20g of Espresso + 20g of Chocolate Sauce",
+    "numShots": "Single Shot",
+    "vessel": "Latte Glass",
+    "milkTexture": "Above Standard Froth 1.5 to 2cm ",
+    "finishedLook": "Simple Clean Latte Art",
+    "notes": "",
+    "Image": ""
+  },
+  {
+    "drink": "Large Mocha",
+    "yield": "40g of Espresso + 30g of Chocolate Sauce",
+    "numShots": "Double Shot",
+    "vessel": "Large Flat White Cup",
+    "milkTexture": "Above Standard Froth 1.5 to 2cm ",
+    "finishedLook": "Choc Powder dusting and Latte Art",
+    "notes": "",
+    "Image": ""
+  },
+  {
+    "drink": "Chai",
+    "yield": "2 pumps of syrup",
+    "numShots": "",
+    "vessel": "Latte Glass",
+    "milkTexture": "Above Standard Froth 1.5 to 2cm ",
+    "finishedLook": "Cinnamon Sugar Dusted on top",
+    "notes": "",
+    "Image": ""
+  },
+  {
+    "drink": "Large Chai",
+    "yield": "3 pumps of syrup",
+    "numShots": "",
+    "vessel": "Large Flat White Cup",
+    "milkTexture": "Above Standard Froth 1.5 to 2cm ",
+    "finishedLook": "Cinnamon Sugar Dusted on top",
+    "notes": "",
+    "Image": ""
+  },   
+  {
+    "drink": "Matcha Latte",
+    "shotTime": "",
+    "yield": "30g of Matcha Sauce",
+    "numShots": "",
+    "vessel": "Latte Glass",
+    "milkTexture": "Above Standard Froth 1.5 to 2cm ",
+    "finishedLook": "Matcha Dusting",
+    "notes": "",
+    "Image": ""
+  },
+  {
+    "drink": "Large Matcha Latte",
+    "yield": "40g of Matcha Sauce",
+    "numShots": "",
+    "vessel": "Large Flat White Cup",
+    "milkTexture": "Above Standard Froth 1.5 to 2cm ",
+    "finishedLook": "Matcha Dusting",
+    "notes": "",
+    "Image": ""
+  },   
+  {
+    "drink": "Ice Chocolate",
+    "yield": "30g of Chocolate Sauce",
+    "vessel": "Glass Tumbler",
+    "milkTexture": "",
+    "finishedLook": "Choc Powder",
+    "notes": "Small Jug of Milk + Choc Syrup sligtly steamed to incorporate. Poured over Ice",
+    "Image": ""
+  },  
+  {
+    "drink": "Ice Chai",
+    "yield": "3 pumps of syrup",
+    "vessel": "Glass Tumbler",
+    "milkTexture": "",
+    "finishedLook": "Cinnamon Sugar Dusted on top",
+    "notes": "Chai Syrup Mixed into Milk Jug. Steam for 5 seconds to Incorporate. Pour over Ice",
+    "Image": ""
+  },
+  {
+    "drink": "Ice Matcha",
+    "yield": "30g",
+    "vessel": "Glass Tumbler",
+    "milkTexture": "",
+    "finishedLook": "",
+    "notes": "Matcha Syrup Mixed with Small Jug of Milk. Slightly steamed to incorporate and poured over Ice.",
+    "Image": ""
+  }
+]  
+  

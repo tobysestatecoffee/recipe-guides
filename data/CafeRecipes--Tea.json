@@ -1,0 +1,66 @@
+[
+  {
+    "tea": "English Breakfast Tea",
+    "teaAmount": "5.5g",
+    "waterAmount": "300mL",
+    "temp": "96°C",
+    "serve": "Tea Pot + Cup",
+    "": ""
+  },
+  {
+    "tea": "Earl Grey Tea",
+    "teaAmount": "5.5g",
+    "waterAmount": "300mL",
+    "temp": "96°C",
+    "serve": "Tea Pot + Cup",
+    "": ""
+  },
+  {
+    "tea": "Peppermint Tea",
+    "teaAmount": "5.5g",
+    "waterAmount": "300mL",
+    "temp": "96°C",
+    "serve": "Tea Pot + Cup",
+    "": ""
+  },
+  {
+    "tea": "Lemon & Ginger Tea",
+    "teaAmount": "5.5g",
+    "waterAmount": "300mL",
+    "temp": "96°C",
+    "serve": "Tea Pot + Cup",
+    "": ""
+  },
+  {
+    "tea": "Chamomile Tea",
+    "teaAmount": "5.5g",
+    "waterAmount": "300mL",
+    "temp": "96°C",
+    "serve": "Tea Pot + Cup",
+    "": ""
+  },
+  {
+    "tea": "Jasmine Green Tea",
+    "teaAmount": "5g",
+    "waterAmount": "300mL",
+    "temp": "85°C",
+    "serve": "Tea Pot + Cup",
+    "": ""
+  },
+  {
+    "tea": "Green Sencha Tea",
+    "teaAmount": "5g",
+    "waterAmount": "300mL",
+    "temp": "85°C",
+    "serve": "Tea Pot + Cup",
+    "": ""
+  },
+  {
+    "tea": "Chai Tea",
+    "teaAmount": "5.5g",
+    "waterAmount": "300mL",
+    "temp": "96°C",
+    "serve": "Tea Pot + Cup",
+    "": ""
+  }
+]

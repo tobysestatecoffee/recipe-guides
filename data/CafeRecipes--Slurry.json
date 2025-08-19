@@ -1,0 +1,54 @@
+[
+  {
+    "name": "Soy Solution",
+    "ingredients": [
+      "5g Biscarb Soda",
+      "150g of Cold Water"
+    ],
+    "method": [
+      "Mixture is Steamed and later dilute with 2 litres of water",
+      "When serving use 1 Pump per shot"
+    ]
+  },
+  {
+    "name": "Choc Slurry",
+    "ingredients": [
+      "2 litres of Hot Water",
+      "2kg of Choc Powder"
+    ],
+    "method": [
+      "Measure 2 litres of Hot water in the Jug first",
+      "Then add 2 kg of Chocolate Powder",
+      "Whisk until fully mixed",
+      "At the end whisk gently at the end to have less bubbles",
+      "Leave out until room temp before filling to sauce bottles"
+    ]
+  },
+  {
+    "name": "Chai Slurry",
+    "ingredients": [
+      "1 litre Chai Syrup",
+      "1 bag of Chai Powder",
+      "1 litre Hot Water"
+    ],
+    "method": [
+      "Starting with the Hot Water first",
+      "Mix All ingredients together",
+      "Let cool and bottle"
+    ]
+  },
+  {
+    "name": "Matcha Slurry",
+    "ingredients": [
+      "Matcha 140g",
+      "Brown Sugar 200g",
+      "Water 740mL @ 80°C"
+    ],
+    "method": [
+      "Makes 1 litre",
+      "Mix Hot Water @ 80 degrees with Brown Sugar first",
+      "Then Add Matcha with a strainer",
+      "Mix"
+    ]
+  }
+]
