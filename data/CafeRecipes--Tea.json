@@ -1,0 +1,66 @@
+[
+  {
+    "tea": "English Breakfast Tea",
+    "teaAmount": "5.5g",
+    "waterAmount": "400mL",
+    "temp": "94°C",
+    "serve": "Tea Pot + Cup + Spoon",
+    "notes": "Serve with milk on the side and check which milk the customer prefers."
+  },
+  {
+    "tea": "Earl Grey Tea",
+    "teaAmount": "5.5g",
+    "waterAmount": "400mL",
+    "temp": "94°C",
+    "serve": "Tea Pot + Cup + Spoon",
+    "notes": "Serve with milk on the side and check which milk the customer prefers."
+  },
+  {
+    "tea": "Peppermint Tea",
+    "teaAmount": "5.5g",
+    "waterAmount": "400mL",
+    "temp": "94°C",
+    "serve": "Tea Pot + Cup + Spoon",
+    "notes": ""
+  },
+  {
+    "tea": "Lemon & Ginger Tea",
+    "teaAmount": "5.5g",
+    "waterAmount": "400mL",
+    "temp": "94°C",
+    "serve": "Tea Pot + Cup + Spoon",
+    "notes": ""
+  },
+  {
+    "tea": "Chamomile Tea",
+    "teaAmount": "5.5g",
+    "waterAmount": "400mL",
+    "temp": "96°C",
+    "serve": "Tea Pot + Cup + Spoon",
+    "notes": ""
+  },
+  {
+    "tea": "Jasmine Green Tea",
+    "teaAmount": "5g",
+    "waterAmount": "400mL",
+    "temp": "85°C",
+    "serve": "Tea Pot + Cup + Spoon",
+    "notes": ""
+  },
+  {
+    "tea": "Green Sencha Tea",
+    "teaAmount": "5g",
+    "waterAmount": "400mL",
+    "temp": "85°C",
+    "serve": "Tea Pot + Cup + Spoon",
+    "notes": ""
+  },
+  {
+    "tea": "Chai Tea",
+    "teaAmount": "5.5g",
+    "waterAmount": "400mL",
+    "temp": "96°C",
+    "serve": "Tea Pot + Cup + Spoon",
+    "notes": "Serve with milk on the side and check which milk the customer prefers."
+  }
+]

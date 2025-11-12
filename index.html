@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toby's Cafe Recipe Guide</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <img class="logo" src="img/logo.png" width="150"/>
+        <h1>Cafè Recipe Guides</h1>
+    </header>
+    
+    <main>
+        <div class="search-container">
+            <div class="search-input-wrapper">
+                <span class="search-icon">🔍</span>
+                <input type="text" id="searchInput" placeholder="Search for a drink...">
+                <span class="clear-icon" id="clearIcon">✕</span>
+            </div>
+        </div>
+        
+        <div class="section-links">
+            <p>or select a category</p>
+            <a href="coffee.html" class="section-link">Coffee</a>
+            <a href="chocchaimatcha.html" class="section-link">Chocolate, Chai & Matcha</a>
+            <a href="tea.html" class="section-link">Tea</a>
+            <a href="slurry.html" class="section-link">Slurry</a>
+        </div>
+        
+        <div id="searchResults" class="search-results"></div>
+    </main>
+    
+    <footer>
+        <p>&copy; 2025 Toby's Estate Coffee Roasters. All rights reserved.</p>
+    </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/lunr/lunr.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

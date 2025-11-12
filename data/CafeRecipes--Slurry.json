@@ -1,0 +1,65 @@
+[
+  {
+    "name": "Soy Solution",
+    "ingredients": [
+      "5g Biscarb Soda",
+      "150g of Cold Water"
+    ],
+    "method": [
+      "Mixture is Steamed and later dilute with 2 litres of water",
+      "When serving use 1 Pump per shot"
+    ]
+  },
+  {
+    "name": "Choc Slurry",
+    "ingredients": [
+      "2 litres of Hot Water",
+      "2kg of Choc Powder"
+    ],
+    "method": [
+      "Place 2L of hot water into a jug",
+      "Add 2kg of chocolate powder",
+      "Whisk vigorously until fully mixed",
+      "Whisk gently until you see less bubbles",
+      "Leave to rest until room temperature",
+      "Split into squeezy bottles, date and label bottles",
+      "Refrigerate"
+    ],
+    "notes": "Makes 2L. Keep refrigerated until use. Only make what you need for 3 days. Can keep up to 3-4 days."    
+  },
+  {
+    "name": "Chai Slurry",
+    "ingredients": [
+      "1 litre Chai Syrup",
+      "1 bag of Chai Powder",
+      "1 litre Hot Water"
+    ],
+    "method": [
+      "Place 1L of hot water into a bowl",
+      "Add 1L of chai syrup",
+      "Add 1 bag of chai powder into the mixture of hot water and chai syrup mix",
+      "Mix until no dry pockets",
+      "Split into squeezy bottles",
+      "Date and label all bottles",
+      "Allow bottles to cool, then refrigerate"
+    ],
+    "notes": "Makes 1L. Keep refrigerated until use. Only make what you need for 3 days. Can keep up to 3-4 days."    
+  },
+  {
+    "name": "Matcha Slurry",
+    "ingredients": [
+      "Matcha 140g",
+      "Brown Sugar 200g",
+      "Water 740mL @ 80°C"
+    ],
+    "method": [
+      "Mix hot water @80 degrees with brown sugar until incorporated",
+      "Then sift matcha into water and sugar mix",
+      "Mix until no dry pockets",
+      "Split into squeezy bottles",
+      "Add to ice bath immediately and leave until cold",
+      "Date and refrigerate"
+    ],
+    "notes": "Makes 1L. Prepare ice bath before making the mix. Keep refrigerated until use. Only make what you need for 1 day."
+  }
+]

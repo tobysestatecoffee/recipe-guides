@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slurry Recipes - Toby's Cafe Recipe Guide</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main>
+        <div class="back-link">
+            <a href="index.html">← Search</a>
+            <div class="category-dropdown-container">
+                <label for="category-dropdown" class="category-label">Change drink category</label>
+                <select id="category-dropdown" class="category-dropdown" onchange="location = this.value;">
+                    <option value="coffee.html">Coffee</option>
+                    <option value="chocchaimatcha.html">Chocolate, Chai & Matcha</option>
+                    <option value="tea.html">Tea</option>
+                    <option value="slurry.html" selected>Slurry</option>
+                </select>
+            </div>
+        </div>
+        
+        <h1>Slurry Recipes</h1>
+        
+        <div id="slurryList" class="recipe-list">
+            <!-- Slurry recipes will be loaded here by JavaScript -->
+        </div>
+    </main>
+    
+    <footer>
+        <p>&copy; 2025 Toby's Estate Coffee Roasters. All rights reserved.</p>
+    </footer>
+    
+    <script src="slurry.js"></script>
+</body>
+</html>
