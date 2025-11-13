@@ -55,9 +55,10 @@ function displaySlurryRecipes() {
     let html = '';
     
     slurryData.forEach((recipe, index) => {
+        const imgSrc = recipe.Image && recipe.Image.trim() !== '' ? 'img/' + recipe.Image : 'img/placeholder.png';
         html += `
             <div class="recipe-card" onclick="showSlurryRecipe(${index})">
-                <div class="recipe-placeholder"><img src="img/placeholder.png" width=40/></div>
+                <div class="recipe-placeholder"><img src="${imgSrc}" width=40/></div>
                 <div>
                     <h3>${recipe.name || 'Unnamed Recipe'}</h3>
                     <p>slurry</p>
@@ -92,9 +93,10 @@ function displaySlurryRecipeDetail(index) {
     
     if (!slurryList) return;
     
+    const imgSrc = recipe.Image && recipe.Image.trim() !== '' ? 'img/' + recipe.Image : 'img/placeholder.png';
     let html = `
         <div>
-            <img src="img/placeholder.png" style="max-width: 200px; width: 100%; display: block; margin: 0 auto;"/>
+            <img src="${imgSrc}" style="max-width: 200px; width: 100%; display: block; margin: 0 auto;"/>
             <h1>${recipe.name}</h1>    `;
     
     // Add ingredients

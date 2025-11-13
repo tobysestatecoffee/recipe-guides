@@ -5,7 +5,9 @@
     "waterAmount": "400mL",
     "temp": "94°C",
     "serve": "Tea Pot + Cup + Spoon",
-    "notes": "Serve with milk on the side and check which milk the customer prefers."
+    "notes": "Serve with milk on the side and check which milk the customer prefers.",
+    "Image": "earlgreytea.png"
+
   },
   {
     "tea": "Earl Grey Tea",
@@ -13,7 +15,8 @@
     "waterAmount": "400mL",
     "temp": "94°C",
     "serve": "Tea Pot + Cup + Spoon",
-    "notes": "Serve with milk on the side and check which milk the customer prefers."
+    "notes": "Serve with milk on the side and check which milk the customer prefers.",
+    "Image": "earlgreytea.png"
   },
   {
     "tea": "Peppermint Tea",
@@ -45,7 +48,8 @@
     "waterAmount": "400mL",
     "temp": "85°C",
     "serve": "Tea Pot + Cup + Spoon",
-    "notes": ""
+    "notes": "",
+    "Image": "greentea.png"    
   },
   {
     "tea": "Green Sencha Tea",
@@ -53,7 +57,8 @@
     "waterAmount": "400mL",
     "temp": "85°C",
     "serve": "Tea Pot + Cup + Spoon",
-    "notes": ""
+    "notes": "",
+    "Image": "greentea.png"
   },
   {
     "tea": "Chai Tea",

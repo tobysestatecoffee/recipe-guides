@@ -9,7 +9,7 @@
     "milkTexture": "",
     "finishedLook": "",
     "notes": "Crema Visible. Serve with spoon.",
-    "Image": ""
+    "Image": "espresso.png"
   },
   {
     "coffee": "Double Shot Ristretto",
@@ -21,7 +21,7 @@
     "milkTexture": "",
     "finishedLook": "",
     "notes": "Crema Visible . Serve with spoon.",
-    "Image": ""
+    "Image": "espresso.png"
   },
   {
     "coffee": "Espresso",
@@ -33,7 +33,7 @@
     "milkTexture": "",
     "finishedLook": "",
     "notes": "Crema Visible. Serve with spoon.",
-    "Image": ""
+    "Image": "espresso.png"
   },
   {
     "coffee": "Double Shot Espresso",
@@ -45,7 +45,7 @@
     "milkTexture": "",
     "finishedLook": "",
     "notes": "Crema Visible. Serve with spoon.",
-    "Image": ""
+    "Image": "espresso.png"
   },
   {
     "coffee": "Long Black",
@@ -57,7 +57,7 @@
     "milkTexture": "",
     "finishedLook": "",
     "notes": "Hot Water first and Espresso on top. Crema Visible. Serve with spoon.",
-    "Image": ""
+    "Image": "longblack.png"
   },
   {
     "coffee": "Double Shot Long Black",
@@ -69,7 +69,7 @@
     "milkTexture": "",
     "finishedLook": "",
     "notes": "Hot Water first and Espresso on top. Crema Visible. Serve with spoon.",
-    "Image": ""
+    "Image": "longblack.png"
   },
   {
     "coffee": "Large Long Black",
@@ -81,7 +81,7 @@
     "milkTexture": "",
     "finishedLook": "",
     "notes": "Hot Water first and Espresso on top. Crema Visible. Serve with spoon.",
-    "Image": ""
+    "Image": "longblack.png"
   },
   {
     "coffee": "Double Shot Large Long Black",
@@ -93,7 +93,7 @@
     "milkTexture": "",
     "finishedLook": "",
     "notes": "Hot Water first and Espresso on top. Crema Visible. Serve with spoon.",
-    "Image": ""
+    "Image": "longblack.png"
   },
   {
     "coffee": "Macchiato",
@@ -105,7 +105,7 @@
     "milkTexture": "Introduce 2cm of foamed milk and swirl until espresso and milk is all in one colour.",
     "finishedLook": "Drink should have three layers (Espresso, milk foam, milk). No scooping of froth from spoons.",
     "notes": "",
-    "Image": ""
+    "Image": "macchiato.png"
   },
   {
     "coffee": "Double Shot Macchiato",
@@ -117,7 +117,7 @@
     "milkTexture": "Introduce 2cm of foamed milk and swirl until espresso and milk is all in one colour.",
     "finishedLook": "Drink should have three layers (Espresso, milk foam, milk). No scooping of froth from spoons.",
     "notes": "",
-    "Image": ""
+    "Image": "macchiato.png"
   },
   {
     "coffee": "Long Macchiato",
@@ -129,7 +129,7 @@
     "milkTexture": "Introduce 2cm of foamed milk and swirl until espresso and milk is all in one colour.",
     "finishedLook": "Drink should have three layers (Espresso, milk foam, milk). No scooping of froth from spoons.",
     "notes": "",
-    "Image": ""
+    "Image": "macchiato.png"
   },
   {
     "coffee": "Piccolo",
@@ -141,7 +141,7 @@
     "milkTexture": "Introduce 2cm of foamed milk and swirl until espresso and milk is all in one colour",
     "finishedLook": "Simple Clean Latte Art",
     "notes": "",
-    "Image": ""
+    "Image": "piccolo.png"
   },
   {
     "coffee": "Double Shot Piccolo",
@@ -153,7 +153,7 @@
     "milkTexture": "Introduce 2cm of foamed milk and swirl until espresso and milk is all in one colour",
     "finishedLook": "Simple Clean Latte Art",
     "notes": "",
-    "Image": ""
+    "Image": "piccolo.png"
   },
   {
     "coffee": "Cortado",
@@ -177,7 +177,7 @@
     "milkTexture": "Introduce 2cm of foamed milk and swirl until espresso and milk is all in one colour  ",
     "finishedLook": "Simple Clean Latte Art",
     "notes": "",
-    "Image": ""
+    "Image": "piccolo.png"
   },
   {
     "coffee": "Flat White",
@@ -189,7 +189,7 @@
     "milkTexture": "Introduce 2cm of foamed milk and swirl until espresso and milk is all in one colour  ",
     "finishedLook": "Simple Clean Latte Art",
     "notes": "",
-    "Image": ""
+    "Image": "flatwhite.png"
   },
   {
     "coffee": "Cappuccino",
@@ -201,7 +201,7 @@
     "milkTexture": "Introduce 2cm of foamed milk and swirl until espresso and milk is all in one colour  ",
     "finishedLook": "Simple Clean Latte Art",
     "notes": "",
-    "Image": ""
+    "Image": "cappuccino.png"
   },  
   {
     "coffee": "Double Shot Flat White",
@@ -213,7 +213,7 @@
     "milkTexture": "Introduce 2cm of foamed milk and swirl until espresso and milk is all in one colour",
     "finishedLook": "Simple Clean Latte Art",
     "notes": "",
-    "Image": ""
+    "Image": "flatwhite.png"
   },
   {
     "coffee": "Double Shot Cappuccino",
@@ -225,7 +225,7 @@
     "milkTexture": "Introduce 2cm of foamed milk and swirl until espresso and milk is all in one colour.",
     "finishedLook": "Simple Clean Latte Art",
     "notes": "",
-    "Image": ""
+    "Image": "cappuccino.png"
   },  
   {
     "coffee": "Latte",
@@ -237,7 +237,7 @@
     "milkTexture": "Introduce 2cm of foamed milk and swirl until espresso and milk is all in one colour.",
     "finishedLook": "Simple Clean Latte Art",
     "notes": "",
-    "Image": ""
+    "Image": "latte.png"
   },
   {
     "coffee": "Double Shot Latte",
@@ -249,7 +249,7 @@
     "milkTexture": "Introduce 2cm of foamed milk and swirl until espresso and milk is all in one colour.",
     "finishedLook": "Simple Clean Latte Art",
     "notes": "",
-    "Image": ""
+    "Image": "latte.png"
   },
   {
     "coffee": "Magic",
@@ -261,7 +261,7 @@
     "milkTexture": "Introduce 2cm of foamed milk and swirl until espresso and milk is all in one colour.",
     "finishedLook": "Filled 3/4 Full",
     "notes": "",
-    "Image": ""
+    "Image": "magic.png"
   },
   {
     "coffee": "Single Origin Espresso",
@@ -273,7 +273,7 @@
     "milkTexture": "",
     "finishedLook": "",
     "notes": "",
-    "Image": ""
+    "Image": "espresso.png"
   },
   {
     "coffee": "Single Origin Long Black",
@@ -285,7 +285,7 @@
     "milkTexture": "",
     "finishedLook": "",
     "notes": "",
-    "Image": ""
+    "Image": "longblack.png"
   },
   {
     "coffee": "Large Single Origin Long Black",
@@ -297,7 +297,7 @@
     "milkTexture": "",
     "finishedLook": "",
     "notes": "",
-    "Image": ""
+    "Image": "longblack.png"
   },
   {
     "coffee": "SiLK (Single Origin with Milk)",
@@ -309,7 +309,7 @@
     "milkTexture": "Introduce 2cm of foamed milk and swirl until espresso and milk is all in one colour.",
     "finishedLook": "Simple Clean Latte Art",
     "notes": "",
-    "Image": ""
+    "Image": "flatwhite.png"
   },
   {
     "coffee": "Double Shot SiLK (Single Origin with Milk)",
@@ -321,7 +321,7 @@
     "milkTexture": "Introduce 2cm of foamed milk and swirl until espresso and milk is all in one colour.",
     "finishedLook": "Simple Clean Latte Art",
     "notes": "",
-    "Image": ""
+    "Image": "flatwhite.png"
   },
   {
     "coffee": "Large SiLK",
@@ -333,7 +333,7 @@
     "milkTexture": "Introduce 2cm of foamed milk and swirl until espresso and milk is all in one colour.",
     "finishedLook": "Simple Clean Latte Art",
     "notes": "",
-    "Image": ""
+    "Image": "flatwhite.png"
   },
   {
     "coffee": "Large Flat White",
@@ -345,7 +345,7 @@
     "milkTexture": "Introduce 2cm of foamed milk and swirl until espresso and milk is all in one colour.",
     "finishedLook": "Simple Clean Latte Art",
     "notes": "",
-    "Image": ""
+    "Image": "flatwhite.png"
   },  {
     "coffee": "Large Cappuccino",
     "type": "milk",
@@ -356,7 +356,7 @@
     "milkTexture": "Introduce 2cm of foamed milk and swirl until espresso and milk is all in one colour.",
     "finishedLook": "Simple Clean Latte Art",
     "notes": "",
-    "Image": ""
+    "Image": "cappuccino.png"
   },
   {
     "coffee": "Large Latte",
@@ -368,7 +368,7 @@
     "milkTexture": "Introduce 2cm of foamed milk and swirl until espresso and milk is all in one colour.",
     "finishedLook": "Simple Clean Latte Art",
     "notes": "",
-    "Image": ""
+    "Image": "latte.png"
   },
   {
     "coffee": "Double Shot Large Flat White",
@@ -380,7 +380,7 @@
     "milkTexture": "Introduce 2cm of foamed milk and swirl until espresso and milk is all in one colour.",
     "finishedLook": "Simple Clean Latte Art",
     "notes": "",
-    "Image": ""
+    "Image": "flatwhite.png"
   },
   {
     "coffee": "Double Shot Large Cappuccino",
@@ -392,7 +392,7 @@
     "milkTexture": "Introduce 2cm of foamed milk and swirl until espresso and milk is all in one colour.",
     "finishedLook": "Simple Clean Latte Art",
     "notes": "",
-    "Image": ""
+    "Image": "cappuccino.png"
   },
   {
     "coffee": "Double Shot Large Latte",
@@ -404,7 +404,7 @@
     "milkTexture": "Introduce 2cm of foamed milk and swirl until espresso and milk is all in one colour.",
     "finishedLook": "Simple Clean Latte Art",
     "notes": "",
-    "Image": ""
+    "Image": "latte.png"
   },    
   {
     "coffee": "V60 Rotation",
@@ -426,7 +426,7 @@
       "Serve with a label/tasting card containing the coffee info."      
     ],
     "notes": "",
-    "Image": ""
+    "Image": "filter.png"
   },
   {
       "coffee": "Ice V60 Rotation",
@@ -471,7 +471,7 @@
       "Serve with a label/tasting card containing the coffee info."      
     ],
     "notes": "",
-    "Image": ""
+    "Image": "filter.png"
   },
   {
     "coffee": "Ice Freezus Filter",
@@ -505,7 +505,7 @@
     "milkTexture": "",
     "finishedLook": "",
     "notes": "Ice to the top of cup. Add water, leaving 2cm from the top of the cup.",
-    "Image": ""
+    "Image": "icelongblack.png"
   },
   {
     "coffee": "Ice Single Origin Long Black",
@@ -517,7 +517,7 @@
     "milkTexture": "",
     "finishedLook": "",
     "notes": "Ice to the top of cup. Add water, leaving 2cm from the top of the cup.",
-    "Image": ""
+    "Image": "icelongblack.png"
   },  
   {
     "coffee": "Ice Latte",

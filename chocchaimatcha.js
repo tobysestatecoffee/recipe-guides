@@ -55,9 +55,10 @@ function displayChocChaiMatchaRecipes() {
     let html = '';
     
     chocchaimatchaData.forEach((recipe, index) => {
+        const imgSrc = recipe.Image && recipe.Image.trim() !== '' ? 'img/' + recipe.Image : 'img/placeholder.png';
         html += `
             <div class="recipe-card" onclick="showChocChaiMatchaRecipe(${index})">
-                <div class="recipe-placeholder"><img src="img/placeholder.png" width=40/></div>
+                <div class="recipe-placeholder"><img src="${imgSrc}" width=40/></div>
                 <div>
                     <h3>${recipe.drink || 'Unnamed Recipe'}</h3>
                     <p>${recipe.type || 'Unnamed Recipe'}</p>
@@ -92,9 +93,10 @@ function displayChocChaiMatchaRecipeDetail(index) {
     
     if (!chocchaimatchaList) return;
     
+    const imgSrc = recipe.Image && recipe.Image.trim() !== '' ? 'img/' + recipe.Image : 'img/placeholder.png';
     let html = `
         <div>
-            <img src="img/placeholder.png" style="max-width: 200px; width: 100%; display: block; margin: 0 auto;"/>
+            <img src="${imgSrc}" style="max-width: 200px; width: 100%; display: block; margin: 0 auto;"/>
             <h1>${recipe.drink}</h1>
             <div class="recipe-detail first">
     `;

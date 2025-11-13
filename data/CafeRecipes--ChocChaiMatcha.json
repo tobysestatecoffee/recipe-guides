@@ -8,7 +8,7 @@
     "milkTexture": "Above Standard Froth 1.5 to 2cm ",
     "finishedLook": "Simple Clean Latte Art. Add Chocolate powder on top.",
     "notes": "",
-    "Image": ""
+    "Image": "hotchocolate.png"
   },
   {
     "drink": "Large Hot Chocolate",
@@ -19,7 +19,7 @@
     "milkTexture": "Above Standard Froth 1.5 to 2cm ",
     "finishedLook": "Simple Clean Latte Art. Add Chocolate powder on top.",
     "notes": "",
-    "Image": ""
+    "Image": "hotchocolate.png"
   },
   {
     "drink": "Mocha",
@@ -31,7 +31,7 @@
     "milkTexture": "Above Standard Froth 1.5 to 2cm ",
     "finishedLook": "Choc Powder dusting and Simple Clean Latte Art",
     "notes": "",
-    "Image": ""
+    "Image": "mocha.png"
   },
   {
     "drink": "Large Mocha",
@@ -43,7 +43,7 @@
     "milkTexture": "Above Standard Froth 1.5 to 2cm ",
     "finishedLook": "Choc Powder dusting and Simple Clean Latte Art",
     "notes": "",
-    "Image": ""
+    "Image": "mocha.png"
   },
   {
     "drink": "Chai",
@@ -54,7 +54,7 @@
     "milkTexture": "Above Standard Froth 1.5 to 2cm ",
     "finishedLook": "Cinnamon Sugar Dusted on top",
     "notes": "",
-    "Image": ""
+    "Image": "chai.png"
   },
   {
     "drink": "Large Chai",
@@ -65,7 +65,7 @@
     "milkTexture": "Above Standard Froth 1.5 to 2cm ",
     "finishedLook": "Cinnamon Sugar Dusted on top",
     "notes": "",
-    "Image": ""
+    "Image": "chai.png"
   },   
   {
     "drink": "Matcha Latte",
@@ -77,7 +77,7 @@
     "milkTexture": "Above Standard Froth 1.5 to 2cm ",
     "finishedLook": "Matcha Dusting",
     "notes": "",
-    "Image": ""
+    "Image": "matchalatte.png"
   },
   {
     "drink": "Large Matcha Latte",
@@ -88,7 +88,7 @@
     "milkTexture": "Above Standard Froth 1.5 to 2cm ",
     "finishedLook": "Matcha Dusting",
     "notes": "",
-    "Image": ""
+    "Image": "matchalatte.png"
   },   
   {
     "drink": "Ice Chocolate",
@@ -98,7 +98,7 @@
     "milkTexture": "",
     "finishedLook": "Small Jug of Milk + Choc Syrup sligtly steamed to incorporate. Poured over Ice. <br>Choc Powder.",
     "notes": "",
-    "Image": ""
+    "Image": "icechocolate.png"
   },  
   {
     "drink": "Ice Chai",
@@ -118,7 +118,7 @@
     "milkTexture": "",
     "finishedLook": "Matcha Syrup Mixed with Small Jug of Milk. Slightly steamed to incorporate and poured over Ice.",
     "notes": "",
-    "Image": ""
+    "Image": "icematcha.png"
   }
 ]  
   
