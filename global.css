@@ -1072,3 +1072,62 @@ button:focus:not(:focus-visible) {
   scroll-snap-align: start;
   margin: 0;
 }
+
+/* ── Scroll Buttons ─────────────────────────────────────────────────── */
+.category-scroll-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.scroll-btn {
+  position: absolute;
+  top: 45%;
+  transform: translateY(-50%);
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: rgba(48, 44, 40, 0.85);
+  backdrop-filter: blur(8px);
+  border: 1px solid var(--border-medium);
+  color: var(--text-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 10;
+  transition: all var(--transition-base);
+  opacity: 0;
+  pointer-events: none;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  font-size: 1.2rem;
+}
+
+.category-scroll-wrapper:hover .scroll-btn.is-visible {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.scroll-btn:hover {
+  background: var(--accent);
+  color: var(--bg-primary);
+  border-color: var(--accent);
+  transform: translateY(-50%) scale(1.1);
+}
+
+.scroll-btn:active {
+  transform: translateY(-50%) scale(0.95);
+}
+
+.scroll-btn.left {
+  left: -22px;
+}
+
+.scroll-btn.right {
+  right: -22px;
+}
+
+@media (max-width: 768px) {
+  .scroll-btn {
+    display: none;
+  }
+}

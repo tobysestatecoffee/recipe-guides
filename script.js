@@ -249,4 +249,72 @@ function displayAllCategorized(container) {
     html += renderSection('Slurry', slurryData.length, slurryHTML, 'slurry.html');
 
     container.innerHTML = html;
+
+    // Initialize scroll arrows after rendering
+    if (window.initScrollArrows) {
+        window.initScrollArrows();
+    }
+}
+
+// Function to initialize horizontal scroll arrows
+window.initScrollArrows = function () {
+    const containers = document.querySelectorAll('.category-scroll-container');
+
+    containers.forEach(container => {
+        // Prevent double initialization
+        if (container.parentElement.classList.contains('category-scroll-wrapper')) return;
+
+        const wrapper = document.createElement('div');
+        wrapper.className = 'category-scroll-wrapper';
+        container.parentNode.insertBefore(wrapper, container);
+        wrapper.appendChild(container);
+
+        const leftBtn = document.createElement('button');
+        leftBtn.className = 'scroll-btn left';
+        leftBtn.innerHTML = '←';
+        leftBtn.setAttribute('aria-label', 'Scroll left');
+
+        const rightBtn = document.createElement('button');
+        rightBtn.className = 'scroll-btn right';
+        rightBtn.innerHTML = '→';
+        rightBtn.setAttribute('aria-label', 'Scroll right');
+
+        wrapper.appendChild(leftBtn);
+        wrapper.appendChild(rightBtn);
+
+        const updateArrows = () => {
+            const scrollLeft = container.scrollLeft;
+            const maxScroll = container.scrollWidth - container.clientWidth;
+
+            // Show left arrow if we have scrolled right
+            if (scrollLeft > 20) {
+                leftBtn.classList.add('is-visible');
+            } else {
+                leftBtn.classList.remove('is-visible');
+            }
+
+            // Show right arrow if there is more to scroll (with some buffer)
+            if (scrollLeft < maxScroll - 20) {
+                rightBtn.classList.add('is-visible');
+            } else {
+                rightBtn.classList.remove('is-visible');
+            }
+        };
+
+        leftBtn.addEventListener('click', () => {
+            container.scrollBy({ left: -container.clientWidth * 0.75, behavior: 'smooth' });
+        });
+
+        rightBtn.addEventListener('click', () => {
+            container.scrollBy({ left: container.clientWidth * 0.75, behavior: 'smooth' });
+        });
+
+        container.addEventListener('scroll', updateArrows);
+        // Using ResizeObserver for more robust updates
+        const resizeObserver = new ResizeObserver(() => updateArrows());
+        resizeObserver.observe(container);
+
+        // Initial check
+        setTimeout(updateArrows, 100);
+    });
 }
