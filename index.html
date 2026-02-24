@@ -1,45 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Toby's Cafe Recipe Guide</title>
+    <title>Toby's Estate Coffee Roasters | Brand Hub - Cafe Recipes</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../Design%20Templates/styles.css">
     <link rel="stylesheet" href="styles.css">
+    <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>☕</text></svg>">
 </head>
+
 <body>
-    <header>
-        <img class="logo" src="img/logo.png" width="150"/>
-        <h1>Cafè Recipe Guides</h1>
+    <header class="brand-bar" role="banner">
+        <div class="brand-bar-inner">
+            <div class="brand-logo-group">
+                <img src="img/logo.png" alt="Toby's Estate Coffee" class="brand-logo">
+                <span class="brand-resource-text"><span class="brand-resource-divider">|</span> Brand Hub</span>
+            </div>
+
+            <button class="hamburger-menu" id="hamburger-menu" aria-label="Toggle Navigation" aria-expanded="false">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+
+            <nav class="brand-nav" id="brand-nav" aria-label="Resource pages">
+                <a href="https://tobysestatecoffee.github.io/design-templates/" class="brand-nav-link">
+                    <span class="nav-icon">📐</span>
+                    Design Templates
+                </a>
+                <a href="https://tobysestatecoffee.github.io/recipe-guides/" class="brand-nav-link active"
+                    aria-current="page">
+                    <span class="nav-icon">☕</span>
+                    Cafè Recipes
+                </a>
+                <a href="https://tobysestatecoffee.github.io/coffee-philosophy/" class="brand-nav-link">
+                    <span class="nav-icon">🎥</span>
+                    Coffee Philosophy
+                </a>
+            </nav>
+        </div>
     </header>
-    
-    <main>
-        <div class="search-container">
-            <div class="search-input-wrapper">
-                <span class="search-icon">🔍</span>
-                <input type="text" id="searchInput" placeholder="Search for a drink...">
-                <span class="clear-icon" id="clearIcon">✕</span>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const hamburgerMenu = document.getElementById('hamburger-menu');
+            const brandNav = document.getElementById('brand-nav');
+            if (hamburgerMenu && brandNav) {
+                hamburgerMenu.addEventListener('click', () => {
+                    const isActive = brandNav.classList.toggle('active');
+                    hamburgerMenu.classList.toggle('active');
+                    hamburgerMenu.setAttribute('aria-expanded', isActive);
+                });
+            }
+        });
+    </script>
+
+    <!-- ── Page Hero ─────────────────────────────────────────────────────── -->
+    <section class="page-hero">
+        <div class="page-hero-inner">
+            <div class="hero-text">
+                <h1 class="page-title">Cafè Recipes</h1>
+                <p class="page-subtitle">Search for a drink or select a category below.</p>
             </div>
         </div>
-        
-        <div class="section-links">
-            <p>or select a category</p>
-            <a href="coffee.html" class="section-link">Coffee</a>
-            <a href="chocchaimatcha.html" class="section-link">Chocolate, Chai & Matcha</a>
-            <a href="tea.html" class="section-link">Tea</a>
-            <a href="slurry.html" class="section-link">Slurry</a>
+    </section>
+
+    <!-- ── Toolbar ────────────────────────────────────────────────────── -->
+    <div class="toolbar" role="search">
+        <div class="toolbar-inner">
+            <div class="search-wrapper" style="max-width: 600px; width: 100%;">
+                <span class="search-icon" aria-hidden="true">🔍</span>
+                <input type="search" class="search-input" id="searchInput" placeholder="Search for a drink..."
+                    aria-label="Search recipes">
+                <button class="search-clear" id="clearIcon" aria-label="Clear search">×</button>
+            </div>
         </div>
-        
-        <div id="searchResults" class="search-results"></div>
+    </div>
+
+    <main class="main-content" role="main">
+
+
+        <div id="template-grid" class="template-grid categorized-view"></div>
+        <div id="searchResults" class="search-results" style="display: none;"></div>
     </main>
-    
-    <footer>
-        <p>&copy; 2025 Toby's Estate Coffee Roasters. All rights reserved.</p>
+
+    <!-- ── Footer ─────────────────────────────────────────────────────── -->
+    <footer class="site-footer" role="contentinfo">
+        &copy; 2026 Toby's Estate Coffee Roasters. All rights reserved.
     </footer>
-    
+
     <script src="https://cdn.jsdelivr.net/npm/lunr/lunr.min.js"></script>
     <script src="script.js"></script>
 </body>
+
 </html>

@@ -23,7 +23,7 @@ fetch('data/CafeRecipes--ChocChaiMatcha.json')
     .then(response => response.json())
     .then(data => {
         chocchaimatchaData = data;
-        
+
         // Check if we should display a specific recipe based on URL hash
         if (!checkHashAndDisplayRecipe()) {
             displayChocChaiMatchaRecipes();
@@ -36,37 +36,40 @@ fetch('data/CafeRecipes--ChocChaiMatcha.json')
 // Display all Chocolate, Chai, Matcha recipes
 function displayChocChaiMatchaRecipes() {
     const chocchaimatchaList = document.getElementById('chocchaimatchaList');
-    
+
     if (!chocchaimatchaList) return;
-    
+
     // Show the main heading when displaying the recipe list
     const heading = document.querySelector('h1');
     if (heading) {
         heading.style.display = 'block';
     }
-    
+
     // Clear the list first
     chocchaimatchaList.innerHTML = '';
-    
+
     // Create a container for search results styling
     const searchResultsContainer = document.createElement('div');
-    searchResultsContainer.className = 'search-results';
-    
+    searchResultsContainer.className = 'template-grid';
+
     let html = '';
-    
+
     chocchaimatchaData.forEach((recipe, index) => {
         const imgSrc = recipe.Image && recipe.Image.trim() !== '' ? 'img/' + recipe.Image : 'img/placeholder.png';
         html += `
-            <div class="recipe-card" onclick="showChocChaiMatchaRecipe(${index})">
-                <div class="recipe-placeholder"><img src="${imgSrc}" width=40/></div>
-                <div>
-                    <h3>${recipe.drink || 'Unnamed Recipe'}</h3>
-                    <p>${recipe.type || 'Unnamed Recipe'}</p>
-                </div>
-            </div>
-        `;
+            <article class="template-card" onclick="showChocChaiMatchaRecipe(${index})" style="cursor: pointer;">
+                <div class="card-thumbnail-wrap">
+                <img class="card-thumbnail-bg" src="${imgSrc}" alt="" aria-hidden="true" loading="lazy">
+                    <img class="card-thumbnail-fg" src="${imgSrc}" loading="lazy" style="object-fit: contain; border-radius: 0;">
+                    </div>
+                    <div class="card-body">
+                        <h2 class="card-title">${recipe.drink || 'Unnamed Recipe'}</h2>
+                        <p class="card-description">${recipe.type || 'Unnamed Recipe'}</p>
+                    </div>
+                </article>
+                `;
     });
-    
+
     searchResultsContainer.innerHTML = html;
     chocchaimatchaList.appendChild(searchResultsContainer);
 }
@@ -75,13 +78,13 @@ function displayChocChaiMatchaRecipes() {
 function showChocChaiMatchaRecipe(index) {
     // Update URL hash
     window.location.hash = `recipe-${index}`;
-    
+
     // Hide the main heading when showing recipe detail
     const heading = document.querySelector('h1');
     if (heading) {
         heading.style.display = 'none';
     }
-    
+
     // Display recipe detail
     displayChocChaiMatchaRecipeDetail(index);
 }
@@ -90,17 +93,17 @@ function showChocChaiMatchaRecipe(index) {
 function displayChocChaiMatchaRecipeDetail(index) {
     const recipe = chocchaimatchaData[index];
     const chocchaimatchaList = document.getElementById('chocchaimatchaList');
-    
+
     if (!chocchaimatchaList) return;
-    
+
     const imgSrc = recipe.Image && recipe.Image.trim() !== '' ? 'img/' + recipe.Image : 'img/placeholder.png';
     let html = `
-        <div>
-            <img src="${imgSrc}" style="max-width: 200px; width: 100%; display: block; margin: 0 auto;"/>
-            <h1>${recipe.drink}</h1>
-            <div class="recipe-detail first">
-    `;
-    
+                <div style="max-width: 800px; margin: 0 auto; text-align: center;">
+                    <img src="${imgSrc}" style="max-width: 200px; width: 100%; display: block; margin: 0 auto 2rem; border-radius: var(--radius-md);" />
+                    <h1 style="font-size: 2.5rem; font-weight: 400; color: var(--text-primary); margin-bottom: 2rem;">${recipe.drink}</h1>
+                    <div class="recipe-detail first" style="text-align: left;">
+                        `;
+
     // Add recipe details    
     if (recipe.yield) {
         html += `
@@ -110,7 +113,7 @@ function displayChocChaiMatchaRecipeDetail(index) {
             </div>
         `;
     }
-    
+
     if (recipe.numShots) {
         html += `
             <div class="recipe-detail-row">
@@ -119,7 +122,7 @@ function displayChocChaiMatchaRecipeDetail(index) {
             </div>        
         `;
     }
-    
+
     if (recipe.vessel) {
         html += `
             <div class="recipe-detail-row">
@@ -128,11 +131,11 @@ function displayChocChaiMatchaRecipeDetail(index) {
             </div>        
         `;
     }
-    
+
     html += `
-            </div>
-    `;
-    
+                    </div>
+                    `;
+
     if (recipe.milkTexture) {
         html += `
             <div class="recipe-detail">
@@ -141,7 +144,7 @@ function displayChocChaiMatchaRecipeDetail(index) {
             </div>
         `;
     }
-    
+
     if (recipe.finishedLook) {
         html += `
             <div class="recipe-detail">
@@ -150,7 +153,7 @@ function displayChocChaiMatchaRecipeDetail(index) {
             </div>
         `;
     }
-    
+
     if (recipe.notes) {
         html += `
             <div class="recipe-detail">
@@ -159,23 +162,23 @@ function displayChocChaiMatchaRecipeDetail(index) {
             </div>
         `;
     }
-    
+
     html += `
-        </div>
-    `;
-    
+                </div>
+                `;
+
     chocchaimatchaList.innerHTML = html;
 }
 
 // Handle hash changes for navigation
-window.addEventListener('hashchange', function() {
+window.addEventListener('hashchange', function () {
     const hash = window.location.hash;
-    
+
     if (!hash || hash === '#') {
         displayChocChaiMatchaRecipes();
         return;
     }
-    
+
     if (hash.startsWith('#recipe-')) {
         const index = parseInt(hash.split('-')[1]);
         if (!isNaN(index) && index >= 0 && index < chocchaimatchaData.length) {
