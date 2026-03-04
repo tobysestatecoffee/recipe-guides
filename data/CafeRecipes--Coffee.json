@@ -13,7 +13,7 @@
   },
   {
     "coffee": "Double Shot Ristretto",
-    "type": "black",    
+    "type": "black",
     "shotTime": "21 seconds",
     "yield": "24g",
     "numShots": "Double Ristretto",
@@ -25,7 +25,7 @@
   },
   {
     "coffee": "Espresso",
-    "type": "black",    
+    "type": "black",
     "shotTime": "29 seconds",
     "yield": "20g",
     "numShots": "Single",
@@ -37,7 +37,7 @@
   },
   {
     "coffee": "Double Shot Espresso",
-    "type": "black",    
+    "type": "black",
     "shotTime": "29 seconds",
     "yield": "40g",
     "numShots": "Double",
@@ -202,7 +202,7 @@
     "finishedLook": "Simple Clean Latte Art",
     "notes": "",
     "Image": "cappuccino.png"
-  },  
+  },
   {
     "coffee": "Double Shot Flat White",
     "type": "milk",
@@ -226,7 +226,7 @@
     "finishedLook": "Simple Clean Latte Art",
     "notes": "",
     "Image": "cappuccino.png"
-  },  
+  },
   {
     "coffee": "Latte",
     "type": "milk",
@@ -346,7 +346,8 @@
     "finishedLook": "Simple Clean Latte Art",
     "notes": "",
     "Image": "flatwhite.png"
-  },  {
+  },
+  {
     "coffee": "Large Cappuccino",
     "type": "milk",
     "shotTime": "29 seconds",
@@ -405,7 +406,7 @@
     "finishedLook": "Simple Clean Latte Art",
     "notes": "",
     "Image": "latte.png"
-  },    
+  },
   {
     "coffee": "V60 Rotation",
     "type": "black",
@@ -423,33 +424,55 @@
       "Pour to 200g, let drain fully. ",
       "Final pour to 250g.",
       "Total brew time should fall between 2:30 – 3:00 min.",
-      "Serve with a label/tasting card containing the coffee info."      
+      "Serve with a label/tasting card containing the coffee info."
     ],
     "notes": "",
     "Image": "filter.png"
   },
   {
-      "coffee": "Ice V60 Rotation",
-      "type": "ice",
-      "water": "210g total",
-      "waterTemp": "91 degrees",
-      "dose": "20g coffee",
-      "grind": "EK43 – Setting 16 (coarsest)",
-      "brewTime": "2:00 – 2:30 min",
-      "method": [
-        "Dose 20g of coffee into your V60.",
-        "Tare scales.",
-        "Bloom: Add 70g water, let sit for 45 seconds.",
-        "At 0:90 sec, add another 70g water (total 140g).",
-        "At 1:35 sec, add another 70g water (total 210g).",
-        "Place ice in TA ice cup, fill to the top.",
-        "Pour coffee onto ice. ",
-        "Total brew time should fall between 2:00– 2:30 min. ",
-        "Serve with card and always serve in TA ice cups to keep ration of ice and brewed coffee the same."      
-      ],
-      "notes": "",
-      "Image": ""
-    },
+    "coffee": "V60 with Drip Assist",
+    "type": "black",
+    "dose": "20g coffee",
+    "water": "250g total",
+    "waterTemp": "93 degrees",
+    "grind": "EK43 – Setting 16 (coarsest)",
+    "brewTime": "2:30 – 3:30 min",
+    "method": [
+      "Add 20g of ground coffee to your V60",
+      "Place Drip Assist on Top of V60",
+      "Tare scales",
+      "Pour 10 grams in Center Ring and continue to pour 40 grams in Outer Ring for a total of 50 gr in 10 seconds",
+      "At 30 seconds, add another 50 grams in the same pouring structure as above",
+      "Allow water to drain completely.",
+      "Repeat process until total volume sits at 250g",
+      "Serve in Carafe or Cup",
+      "Serve with a label/ tasting card containing coffee information"
+    ],
+    "notes": "",
+    "Image": "filter.png"
+  },
+  {
+    "coffee": "Ice V60 Rotation",
+    "type": "ice",
+    "water": "210g total",
+    "waterTemp": "91 degrees",
+    "dose": "20g coffee",
+    "grind": "EK43 – Setting 16 (coarsest)",
+    "brewTime": "2:00 – 2:30 min",
+    "method": [
+      "Dose 20g of coffee into your V60.",
+      "Tare scales.",
+      "Bloom: Add 70g water, let sit for 45 seconds.",
+      "At 0:90 sec, add another 70g water (total 140g).",
+      "At 1:35 sec, add another 70g water (total 210g).",
+      "Place ice in TA ice cup, fill to the top.",
+      "Pour coffee onto ice. ",
+      "Total brew time should fall between 2:00– 2:30 min. ",
+      "Serve with card and always serve in TA ice cups to keep ration of ice and brewed coffee the same."
+    ],
+    "notes": "",
+    "Image": ""
+  },
   {
     "coffee": "Freezus Filter",
     "type": "black",
@@ -468,7 +491,7 @@
       "Pour to 200g, let drain fully. ",
       "Final pour to 250g. ",
       "Total brew time should fall between 2:30 – 3:00 min.",
-      "Serve with a label/tasting card containing the coffee info."      
+      "Serve with a label/tasting card containing the coffee info."
     ],
     "notes": "",
     "Image": "filter.png"
@@ -482,19 +505,19 @@
     "grind": "EK43 – Setting 16 (coarsest)",
     "brewTime": "2:00 – 2:30min",
     "method": [
-          "Dose 20g of coffee into your V60.",
-          "Tare scales.",
-          "Bloom: Add 70g water, let sit for 45 seconds.",
-          "At 0:90 sec, add another 70g water (total 140g).",
-          "At 1:35 sec, add another 70g water (total 210g).",
-          "Place ice in TA ice cup, fill to the top.",
-          "Pour coffee onto ice. ",
-          "Total brew time should fall between 2:00– 2:30 min. ",
-          "Serve with card and always serve in TA ice cups to keep ration of ice and brewed coffee the same."      
-        ],
+      "Dose 20g of coffee into your V60.",
+      "Tare scales.",
+      "Bloom: Add 70g water, let sit for 45 seconds.",
+      "At 0:90 sec, add another 70g water (total 140g).",
+      "At 1:35 sec, add another 70g water (total 210g).",
+      "Place ice in TA ice cup, fill to the top.",
+      "Pour coffee onto ice. ",
+      "Total brew time should fall between 2:00– 2:30 min. ",
+      "Serve with card and always serve in TA ice cups to keep ration of ice and brewed coffee the same."
+    ],
     "notes": "",
     "Image": ""
-  },  
+  },
   {
     "coffee": "Ice Long Black",
     "type": "ice",
@@ -518,7 +541,7 @@
     "finishedLook": "",
     "notes": "Ice to the top of cup. Add water, leaving 2cm from the top of the cup.",
     "Image": "icelongblack.png"
-  },  
+  },
   {
     "coffee": "Ice Latte",
     "type": "ice",
