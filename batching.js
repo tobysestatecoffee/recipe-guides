@@ -1,43 +1,43 @@
-// Load slurry data
-let slurryData = [];
+// Load batching data
+let batchingData = [];
 
 // Function to check if we should display a specific recipe based on URL hash
 function checkHashAndDisplayRecipe() {
     const hash = window.location.hash;
     if (hash && hash.startsWith('#recipe-')) {
         const index = parseInt(hash.split('-')[1]);
-        if (!isNaN(index) && index >= 0 && index < slurryData.length) {
+        if (!isNaN(index) && index >= 0 && index < batchingData.length) {
             // Hide the main heading when showing recipe detail
             const heading = document.querySelector('h1');
             if (heading) {
                 heading.style.display = 'none';
             }
-            displaySlurryRecipeDetail(index);
+            displayBatchingRecipeDetail(index);
             return true;
         }
     }
     return false;
 }
 
-fetch('data/CafeRecipes--Slurry.json')
+fetch('data/CafeRecipes--Batching.json')
     .then(response => response.json())
     .then(data => {
-        slurryData = data;
+        batchingData = data;
 
         // Check if we should display a specific recipe based on URL hash
         if (!checkHashAndDisplayRecipe()) {
-            displaySlurryRecipes();
+            displayBatchingRecipes();
         }
     })
     .catch(error => {
-        console.error('Error loading slurry data:', error);
+        console.error('Error loading batching data:', error);
     });
 
-// Display all slurry recipes
-function displaySlurryRecipes() {
-    const slurryList = document.getElementById('slurryList');
+// Display all batching recipes
+function displayBatchingRecipes() {
+    const batchingList = document.getElementById('batchingList');
 
-    if (!slurryList) return;
+    if (!batchingList) return;
 
     // Show the main heading when displaying the recipe list
     const heading = document.querySelector('h1');
@@ -46,7 +46,7 @@ function displaySlurryRecipes() {
     }
 
     // Clear the list first
-    slurryList.innerHTML = '';
+    batchingList.innerHTML = '';
 
     // Create a container for search results styling
     const searchResultsContainer = document.createElement('div');
@@ -54,28 +54,28 @@ function displaySlurryRecipes() {
 
     let html = '';
 
-    slurryData.forEach((recipe, index) => {
+    batchingData.forEach((recipe, index) => {
         const imgSrc = recipe.Image && recipe.Image.trim() !== '' ? 'img/' + recipe.Image : 'img/placeholder.png';
         html += `
-            <article class="template-card" onclick="showSlurryRecipe(${index})" style="cursor: pointer;">
+            <article class="template-card" onclick="showBatchingRecipe(${index})" style="cursor: pointer;">
                 <div class="card-thumbnail-wrap">
                 <img class="card-thumbnail-bg" src="${imgSrc}" alt="" aria-hidden="true" loading="lazy">
                     <img class="card-thumbnail-fg" src="${imgSrc}" loading="lazy" style="object-fit: contain; border-radius: 0;">
                     </div>
                     <div class="card-body">
                         <h2 class="card-title">${recipe.name || 'Unnamed Recipe'}</h2>
-                        <p class="card-description">Slurry</p>
+                        <p class="card-description">Batching</p>
                     </div>
                 </article>
                 `;
     });
 
     searchResultsContainer.innerHTML = html;
-    slurryList.appendChild(searchResultsContainer);
+    batchingList.appendChild(searchResultsContainer);
 }
 
-// Show slurry recipe detail
-function showSlurryRecipe(index) {
+// Show batching recipe detail
+function showBatchingRecipe(index) {
     // Update URL hash
     window.location.hash = `recipe-${index}`;
 
@@ -86,15 +86,15 @@ function showSlurryRecipe(index) {
     }
 
     // Display recipe detail
-    displaySlurryRecipeDetail(index);
+    displayBatchingRecipeDetail(index);
 }
 
-// Display slurry recipe detail
-function displaySlurryRecipeDetail(index) {
-    const recipe = slurryData[index];
-    const slurryList = document.getElementById('slurryList');
+// Display batching recipe detail
+function displayBatchingRecipeDetail(index) {
+    const recipe = batchingData[index];
+    const batchingList = document.getElementById('batchingList');
 
-    if (!slurryList) return;
+    if (!batchingList) return;
 
     const imgSrc = recipe.Image && recipe.Image.trim() !== '' ? 'img/' + recipe.Image : 'img/placeholder.png';
     let html = `
@@ -138,7 +138,7 @@ function displaySlurryRecipeDetail(index) {
             </div>
             `;
 
-    slurryList.innerHTML = html;
+    batchingList.innerHTML = html;
 }
 
 // Handle hash changes for navigation
@@ -146,19 +146,19 @@ window.addEventListener('hashchange', function () {
     const hash = window.location.hash;
 
     if (!hash || hash === '#') {
-        displaySlurryRecipes();
+        displayBatchingRecipes();
         return;
     }
 
     if (hash.startsWith('#recipe-')) {
         const index = parseInt(hash.split('-')[1]);
-        if (!isNaN(index) && index >= 0 && index < slurryData.length) {
+        if (!isNaN(index) && index >= 0 && index < batchingData.length) {
             // Hide the main heading when showing recipe detail
             const heading = document.querySelector('h1');
             if (heading) {
                 heading.style.display = 'none';
             }
-            displaySlurryRecipeDetail(index);
+            displayBatchingRecipeDetail(index);
         }
     }
 });

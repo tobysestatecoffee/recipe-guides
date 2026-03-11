@@ -11,7 +11,7 @@
     ]
   },
   {
-    "name": "Choc Slurry",
+    "name": "Choc Batching",
     "ingredients": [
       "2 litres of Hot Water",
       "2kg of Choc Powder"
@@ -28,7 +28,7 @@
     "notes": "Makes 2L. Keep refrigerated until use. Only make what you need for 3 days. Can keep up to 3-4 days."    
   },
   {
-    "name": "Chai Slurry",
+    "name": "Chai Batching",
     "ingredients": [
       "1 litre Chai Syrup",
       "1 bag of Chai Powder",
@@ -46,7 +46,7 @@
     "notes": "Makes 1L. Keep refrigerated until use. Only make what you need for 3 days. Can keep up to 3-4 days."    
   },
   {
-    "name": "Matcha Slurry",
+    "name": "Matcha Batching",
     "ingredients": [
       "Matcha 140g",
       "Brown Sugar 200g",

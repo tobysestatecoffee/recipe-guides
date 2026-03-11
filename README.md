@@ -4,12 +4,12 @@ A comprehensive web-based application for standardising drink preparation across
 
 ## Purpose
 
-This application serves as a centralised digital recipe guide to maintain consistency in drink preparation across all Toby's Estate locations. It provides detailed instructions for preparing coffee, tea, chocolate, chai, matcha, and slurry beverages according to standardised recipes.
+This application serves as a centralised digital recipe guide to maintain consistency in drink preparation across all Toby's Estate locations. It provides detailed instructions for preparing coffee, tea, chocolate, chai, matcha, and batching beverages according to standardised recipes.
 
 ## Features
 
 - **Search Functionality**: Quickly find recipes by name using the search feature
-- **Categorized Recipes**: Browse drinks by category (Coffee, Chocolate/Chai/Matcha, Tea, Slurry)
+- **Categorized Recipes**: Browse drinks by category (Coffee, Chocolate/Chai/Matcha, Tea, Batching)
 - **Detailed Instructions**: Each recipe includes specific preparation details:
   - Shot time and yield
   - Number of shots
@@ -24,7 +24,7 @@ This application serves as a centralised digital recipe guide to maintain consis
 1. **Coffee**: Espresso-based drinks including Ristretto, Espresso, Long Black, Macchiato, Piccolo, Flat White, Cappuccino, Latte, and specialty items
 2. **Chocolate, Chai & Matcha**: Specialty beverages in these categories
 3. **Tea**: Various tea preparations
-4. **Slurry**: Specialized slurry-based drinks
+4. **Batching**: Specialized batching recipes
 
 ## Technical Implementation
 
@@ -34,18 +34,18 @@ This application serves as a centralised digital recipe guide to maintain consis
 ├── coffee.html             # Coffee recipes page
 ├── chocchaimatcha.html     # Chocolate/Chai/Matcha recipes page
 ├── tea.html                # Tea recipes page
-├── slurry.html             # Slurry recipes page
+├── batching.html           # Batching recipes page
 ├── styles.css              # Shared styling
 ├── script.js               # Main search functionality
 ├── coffee.js               # Coffee recipes logic
 ├── chocchaimatcha.js       # Chocolate/Chai/Matcha recipes logic
 ├── tea.js                  # Tea recipes logic
-├── slurry.js               # Slurry recipes logic
+├── batching.js             # Batching recipes logic
 ├── data/
 │   ├── CafeRecipes--Coffee.json
 │   ├── CafeRecipes--ChocChaiMatcha.json
 │   ├── CafeRecipes--Tea.json
-│   └── CafeRecipes--Slurry.json
+│   └── CafeRecipes--Batching.json
 └── img/
     ├── logo.png
     └── placeholder.png

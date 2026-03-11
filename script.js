@@ -1,20 +1,20 @@
 // Load data from JSON files
 let coffeeData = [];
 let teaData = [];
-let slurryData = [];
+let batchingData = [];
 let chocchaimatchaData = [];
 
 // Fetch all data when the page loads
 Promise.all([
     fetch('data/CafeRecipes--Coffee.json').then(response => response.json()),
     fetch('data/CafeRecipes--Tea.json').then(response => response.json()),
-    fetch('data/CafeRecipes--Slurry.json').then(response => response.json()),
+    fetch('data/CafeRecipes--Batching.json').then(response => response.json()),
     fetch('data/CafeRecipes--ChocChaiMatcha.json').then(response => response.json())
 ])
-    .then(([coffee, tea, slurry, chocchaimatcha]) => {
+    .then(([coffee, tea, batching, chocchaimatcha]) => {
         coffeeData = coffee;
         teaData = tea;
-        slurryData = slurry;
+        batchingData = batching;
         chocchaimatchaData = chocchaimatcha;
 
         // Initialize Lunr.js search index
@@ -58,12 +58,12 @@ function initializeSearch() {
             });
         });
 
-        // Add slurry recipes
-        slurryData.forEach((recipe, index) => {
+        // Add batching recipes
+        batchingData.forEach((recipe, index) => {
             this.add({
-                id: `slurry-${index}`,
+                id: `batching-${index}`,
                 name: recipe.name || '',
-                type: 'slurry',
+                type: 'batching',
                 details: Object.values(recipe).join(' ')
             });
         });
@@ -161,11 +161,11 @@ function initializeSearch() {
                     pageLink = `tea.html#recipe-${idx}`;
                     imgSrcPath = teaData[idx].Image;
                     break;
-                case 'slurry':
-                    recipeName = slurryData[idx].name || '';
-                    recipeDetails = 'Slurry';
-                    pageLink = `slurry.html#recipe-${idx}`;
-                    imgSrcPath = slurryData[idx].Image;
+                case 'batching':
+                    recipeName = batchingData[idx].name || '';
+                    recipeDetails = 'Batching';
+                    pageLink = `batching.html#recipe-${idx}`;
+                    imgSrcPath = batchingData[idx].Image;
                     break;
                 case 'chocchaimatcha':
                     recipeName = chocchaimatchaData[idx].drink || '';
@@ -244,9 +244,9 @@ function displayAllCategorized(container) {
     let teaHTML = teaData.map((r, i) => createCardHTML(r.Image, r.tea || 'Unnamed Recipe', 'Tea', `tea.html#recipe-${i}`)).join('');
     html += renderSection('Tea', teaData.length, teaHTML, 'tea.html');
 
-    // Build Slurry
-    let slurryHTML = slurryData.map((r, i) => createCardHTML(r.Image, r.name || 'Unnamed Recipe', 'Slurry', `slurry.html#recipe-${i}`)).join('');
-    html += renderSection('Slurry', slurryData.length, slurryHTML, 'slurry.html');
+    // Build Batching
+    let batchingHTML = batchingData.map((r, i) => createCardHTML(r.Image, r.name || 'Unnamed Recipe', 'Batching', `batching.html#recipe-${i}`)).join('');
+    html += renderSection('Batching', batchingData.length, batchingHTML, 'batching.html');
 
     container.innerHTML = html;
 
